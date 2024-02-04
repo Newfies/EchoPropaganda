@@ -1,49 +1,60 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var hasAudioPlayed = false;
+    const btn = document.getElementById("wait");
+    const one = document.getElementById('one');
+    const k = document.getElementById('k');
+    const l = document.getElementById('l');
+    const f = document.getElementById('foot');
+    const f2 = document.getElementById('foot2');
+    const o = document.getElementById("oo");
 
-    function playRandomAudio() {
-        if (!hasAudioPlayed) {
-            var audioElement = document.getElementById("aud");
-            var player = document.getElementById('s');
-            var apple = Math.floor(Math.random() * 10) + 1;
+    btn.addEventListener("click", function(){
+        console.log("Launching Nuke");
+        btn.style.display = "none";
+        one.style.display = "block";
+        k.style.display = "block";
+        l.style.display = "block";
+        f.style.display = "block";
+        f2.style.display = "block";
+        o.style.display = "inline-block";
+        launch()
+    })
+});
 
-            if (apple === 1) {
-                player.setAttribute("src", "res/fixed-as.mp3");
-            } else if (apple === 2) {
-                player.setAttribute("src", "res/fixed-bi.mp3");
-            } else if (apple === 3) {
-                player.setAttribute("src", "res/fixed-diaf.mp3");
-            } else if (apple === 4) {
-                player.setAttribute("src", "res/fnaf.mp3");
-            } else if (apple === 5) {
-                player.setAttribute("src", "res/fixed-g.mp3");
-            } else if (apple === 6) {
-                player.setAttribute("src", "res/fixed-gl.mp3");
-            } else if (apple === 7) {
-                player.setAttribute("src", "res/fixed-iheay.mp3");
-            } else if (apple === 8) {
-                player.setAttribute("src", "res/fixed-ite.mp3");
-            } else if (apple === 9) {
-                player.setAttribute("src", "res/fixed-sc.mp3");
-            } else if (apple === 10) {
-                player.setAttribute("src", "res/fixed-stiutk.mp3");
-            }
 
-            audioElement.load();
-            try {
-                audioElement.play();
-            } catch (error) {
-                console.error("Error while playing audio:", error);
-            }
+function launch(){
 
-            hasAudioPlayed = true;
-        }
+    var audioElement = document.getElementById("aud");
+    var player = document.getElementById('s');
+    var apple = Math.floor(Math.random() * 10) + 1;
+
+    if (apple === 1) {
+        player.setAttribute("src", "res/fixed-as.mp3");
+    } else if (apple === 2) {
+        player.setAttribute("src", "res/fixed-bi.mp3");
+    } else if (apple === 3) {
+        player.setAttribute("src", "res/fixed-diaf.mp3");
+    } else if (apple === 4) {
+        player.setAttribute("src", "res/fnaf.mp3");
+    } else if (apple === 5) {
+        player.setAttribute("src", "res/CG.mp3"); // Credit To My Darling Stiizzy
+    } else if (apple === 6) {
+        player.setAttribute("src", "res/fixed-gl.mp3");
+    } else if (apple === 7) {
+        player.setAttribute("src", "res/fixed-iheay.mp3");
+    } else if (apple === 8) {
+        player.setAttribute("src", "res/fixed-ite.mp3");
+    } else if (apple === 9) {
+        player.setAttribute("src", "res/fixed-sc.mp3");
+    } else if (apple === 10) {
+        player.setAttribute("src", "res/fixed-stiutk.mp3");
     }
 
-    // Play audio when user clicks anywhere on the document
-    document.addEventListener("click", playRandomAudio);
-
-    // Rest of your script...
+    audioElement.load();
+    try {
+        audioElement.play();
+    } catch (error) {
+        console.error("Error while playing audio:", error);
+    }
 
     function addImageToDiv() {
         var divY = document.querySelector('.y');
@@ -54,41 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setInterval(addImageToDiv, 50);
-
-    document.body.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-        window.location.assign("index.html?moused");
-    });
-
-    document.body.addEventListener("mouseenter", function () {
-        playRandomAudio();
-    });
-
-    document.body.addEventListener("click", function () {
-        window.location.assign("index.html?moused");
-    });
-
-    document.body.addEventListener("mouseleave", function () {
-        playRandomAudio();
-    });
-
-    document.body.addEventListener("load", function () {
-        playRandomAudio();
-    });
-
-    document.body.addEventListener("scroll", function () {
-        playRandomAudio();
-    });
-
-    document.getElementById('one').addEventListener("mouseenter", function () {
-        playRandomAudio();
-    });
-
-    document.getElementById('one').addEventListener("mouseleave", function () {
-        playRandomAudio();
-    });
-
-    document.getElementById('one').addEventListener("scroll", function () {
-        playRandomAudio();
-    });
-});
+}
