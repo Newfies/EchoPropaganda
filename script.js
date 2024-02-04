@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.addEventListener("contextmenu", function (event) {
         event.preventDefault();
-        window.location.assign("index.html?fg");
+        window.location.assign("index.html?moused");
     });
 
     document.body.addEventListener("mouseenter", function () {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.body.addEventListener("click", function () {
-        playRandomAudio();
+        window.location.assign("index.html?moused");
     });
 
     document.body.addEventListener("mouseleave", function () {
