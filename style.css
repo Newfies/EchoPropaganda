@@ -46,7 +46,7 @@ p {
     border-radius: 6px;
     margin: 20px auto; /* Change margin to 20px top/bottom and auto left/right */
     text-align: center;
-    max-height: 175px;
+    max-height: 75px;
 }
 
 .y {
@@ -96,3 +96,14 @@ p {
 }
 
 /* I Will Fill Your Insides If You Keep Looking At The Code */
+
+#pe {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 340px;
+}
+
+video {
+    max-width: 50%;
+}
