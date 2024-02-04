@@ -46,3 +46,19 @@ setTimeout(function() {
         playRandomAudio();
     }
 }, 3000); // Adjust the delay (in milliseconds) as needed
+
+
+function addImageToDiv() {
+    var divY = document.querySelector('.y');
+
+    // Create an <img> element
+    var imgElement = document.createElement('img');
+    imgElement.className = 'xd';
+    imgElement.src = 'res/xmr_hoodie.webp';
+
+    // Append the <img> element to the div with class 'y'
+    divY.appendChild(imgElement);
+}
+
+// Run the function every 3 seconds
+setInterval(addImageToDiv, 50);

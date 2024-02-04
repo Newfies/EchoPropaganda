@@ -34,3 +34,28 @@ p {
     margin-bottom: 1000px;
 
 }
+
+.xd {
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 6px;
+    margin: 20px auto; /* Change margin to 20px top/bottom and auto left/right */
+    text-align: center;
+    max-height: 500px;
+}
+
+.y {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 10%);
+    border: 1px solid red;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
