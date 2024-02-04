@@ -25,7 +25,7 @@ function launch(){
 
     var audioElement = document.getElementById("aud");
     var player = document.getElementById('s');
-    var apple = Math.floor(Math.random() * 10) + 1;
+    var apple = Math.floor(Math.random() * 20) + 1;
 
     if (apple === 1) {
         player.setAttribute("src", "res/fixed-as.mp3");
@@ -47,6 +47,26 @@ function launch(){
         player.setAttribute("src", "res/fixed-sc.mp3");
     } else if (apple === 10) {
         player.setAttribute("src", "res/fixed-stiutk.mp3");
+    } else if (apple === 11) {
+        player.setAttribute("src", "res/hoaf.mp3");
+    } else if (apple === 12) {
+        player.setAttribute("src", "res/biyj.mp3");
+    } else if (apple === 13) {
+        player.setAttribute("src", "res/Ball.mp3");
+    } else if (apple === 14) {
+        player.setAttribute("src", "res/bal.mp3");
+    } else if (apple === 15) {
+        player.setAttribute("src", "res/beg.mp3"); // Credit To My Darling Stiizzy
+    } else if (apple === 16) {
+        player.setAttribute("src", "res/lucid.mp3");
+    } else if (apple === 17) {
+        player.setAttribute("src", "res/fim.mp3");
+    } else if (apple === 18) {
+        player.setAttribute("src", "res/ec.mp3");
+    } else if (apple === 19) {
+        player.setAttribute("src", "res/aito.mp3");
+    } else if (apple === 20) {
+        player.setAttribute("src", "res/gary.mp3");
     }
 
     audioElement.load();
