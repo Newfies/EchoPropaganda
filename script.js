@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const l = document.getElementById('l');
     const f = document.getElementById('foot');
     const f2 = document.getElementById('foot2');
+    const f3 = document.getElementById('foot3');
     const o = document.getElementById("oo");
-    const pp = document.getElementById("pp");
+   //  const pp = document.getElementById("pp");
 
     btn.addEventListener("click", function(){
         console.log("Launching Nuke");
@@ -16,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         l.style.display = "block";
         f.style.display = "block";
         f2.style.display = "block";
-        pp.style.display = "block";
+        f3.style.display = "block";
+        // pp.style.display = "block";
         o.style.display = "inline-block";
         launch()
     })
