@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const f = document.getElementById('foot');
     const f2 = document.getElementById('foot2');
     const o = document.getElementById("oo");
+    const pp = document.getElementById("pp");
 
     btn.addEventListener("click", function(){
         console.log("Launching Nuke");
@@ -15,13 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
         l.style.display = "block";
         f.style.display = "block";
         f2.style.display = "block";
+        pp.style.display = "block";
         o.style.display = "inline-block";
         launch()
     })
+
+    
 });
 
 
 function launch(){
+
+    /* var game = document.getElementById("game");
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    game.style.width = width + "px";
+    game.style.height = height + "px";
+    */
 
     var audioElement = document.getElementById("aud");
     var player = document.getElementById('s');
