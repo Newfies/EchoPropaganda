@@ -55,23 +55,23 @@ function addImageToDiv() {
 
 setInterval(addImageToDiv, 50);
 
-document.body.addEventListener("contextmenu", function(event) {
+document.body.addEventListener("contextmenu", function (event) {
     event.preventDefault();
     window.location.assign("index.html?fg");
 });
 
-document.body.addEventListener("mouseenter", function() {
+document.body.addEventListener("mouseenter", function () {
     playRandomAudio();
 });
 
-document.body.addEventListener("click", function() {
+document.body.addEventListener("click", function () {
     playRandomAudio();
 });
 
-document.body.addEventListener("mouseleave", function() {
+document.body.addEventListener("mouseleave", function () {
     playRandomAudio();
 });
 
-document.body.addEventListener("onload`", function() {
+document.body.addEventListener("onload`", function () {
     playRandomAudio();
 });
