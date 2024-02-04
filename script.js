@@ -4,7 +4,7 @@ function playRandomAudio() {
     if (!hasAudioPlayed) {
         var audioElement = document.getElementById("aud");
         var player = document.getElementById('s');
-        var apple = Math.floor(Math.random() * 10) + 1;  // Generate a random number between 1 and 10
+        var apple = Math.floor(Math.random() * 10) + 1;
 
         if (apple === 1) {
             player.setAttribute("src", "res/fixed-as.mp3");
@@ -28,37 +28,49 @@ function playRandomAudio() {
             player.setAttribute("src", "res/fixed-stiutk.mp3");
         }
 
-        audioElement.load();  // Reload the audio element with the new source
-        audioElement.play();  // Play the audio
+        audioElement.load();
+        try {
+            audioElement.play();
+        } catch (error) {
+            console.error("Error while playing audio:", error);
+        }
 
-        hasAudioPlayed = true;  // Set the flag to indicate that the audio has been played
+        hasAudioPlayed = true;
     }
 }
 
-// Check if audio has played after a delay
-setTimeout(function() {
-    var audioElement = document.getElementById("aud");
+// Play audio when user clicks anywhere on the document
+document.addEventListener("click", playRandomAudio);
 
-    if (audioElement.readyState >= 2) {
-        // Audio has played, do nothing
-    } else {
-        // Audio hasn't played, manually run the script
-        playRandomAudio();
-    }
-}, 3000); // Adjust the delay (in milliseconds) as needed
-
+// Rest of your script...
 
 function addImageToDiv() {
     var divY = document.querySelector('.y');
-
-    // Create an <img> element
     var imgElement = document.createElement('img');
     imgElement.className = 'xd';
     imgElement.src = 'res/xmr_hoodie.webp';
-
-    // Append the <img> element to the div with class 'y'
     divY.appendChild(imgElement);
 }
 
-// Run the function every 3 seconds
 setInterval(addImageToDiv, 50);
+
+document.body.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    window.location.assign("index.html?fg");
+});
+
+document.body.addEventListener("mouseenter", function() {
+    playRandomAudio();
+});
+
+document.body.addEventListener("click", function() {
+    playRandomAudio();
+});
+
+document.body.addEventListener("mouseleave", function() {
+    playRandomAudio();
+});
+
+document.body.addEventListener("onload", function() {
+    playRandomAudio();
+});

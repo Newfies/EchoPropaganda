@@ -1,24 +1,16 @@
 <html>
 
 <head>
-    <meta property="og:site_name" content="Echo Awareness" />
-    <meta property="og:site_name" content="3kh0.net" />
-    <meta property="og:title" content="3kh0.net" />
-    <meta property="og:description" content="He is echo, but find out the dark truth about him here! Echo Awareness provides the juciy details." />
-    <meta property="og:image" id="ogImage" content="/res/3kh0.png" />
-    <meta property="og:image" content="https://echoisafurry.com/res/3kh0.png" />
-    <link rel="icon" href="/res/3kh0.png" />
-    <link rel="shortcut icon" href="/res/3kh0.png" />
-
+    <!-- Your meta tags and other head elements -->
     <title>Echo Awareness</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<audio id="aud" controls style="display:none;">
-    <source id="s" type="audio/mp3">
-</audio>
+<body onmouseenter="playRandomAudio()" onclick="playRandomAudio()" onfocus="playRandomAudio()">
 
-<body onmouseenter="playAudio()">
+    <audio id="aud" controls style="display:none;">
+        <source id="s" type="audio/mp3">
+    </audio>
 
     <div class="yeah-this-web-design-sucks-but-whatever">
         <img src="res/pic1.png">
@@ -35,6 +27,5 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 
 </html>

@@ -41,7 +41,7 @@ p {
     border-radius: 6px;
     margin: 20px auto; /* Change margin to 20px top/bottom and auto left/right */
     text-align: center;
-    max-height: 500px;
+    max-height: 175px;
 }
 
 .y {
