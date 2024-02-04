@@ -1,6 +1,6 @@
 var hasAudioPlayed = false;
 
-function playAudio() {
+function playRandomAudio() {
     if (!hasAudioPlayed) {
         var audioElement = document.getElementById("aud");
         var player = document.getElementById('s');
@@ -34,3 +34,15 @@ function playAudio() {
         hasAudioPlayed = true;  // Set the flag to indicate that the audio has been played
     }
 }
+
+// Check if audio has played after a delay
+setTimeout(function() {
+    var audioElement = document.getElementById("aud");
+
+    if (audioElement.readyState >= 2) {
+        // Audio has played, do nothing
+    } else {
+        // Audio hasn't played, manually run the script
+        playRandomAudio();
+    }
+}, 3000); // Adjust the delay (in milliseconds) as needed
