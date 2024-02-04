@@ -76,10 +76,19 @@ document.body.addEventListener("onload`", function () {
     playRandomAudio();
 });
 
+document.body.addEventListener("scroll`", function () {
+    playRandomAudio();
+});
+
+
 document.getElementById('one').addEventListener("mouseenter", function () {
     playRandomAudio();
 });
 
 document.getElementById('one').addEventListener("mouseleave", function () {
+    playRandomAudio();
+});
+
+document.getElementById('one').addEventListener("scroll", function () {
     playRandomAudio();
 });
