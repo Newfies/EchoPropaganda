@@ -1,3 +1,4 @@
+// Fuck Me Dude
 var hasAudioPlayed = false;
 
 function playRandomAudio() {
@@ -71,6 +72,6 @@ document.body.addEventListener("mouseleave", function() {
     playRandomAudio();
 });
 
-document.body.addEventListener("onload", function() {
+document.body.addEventListener("onload`", function() {
     playRandomAudio();
 });
