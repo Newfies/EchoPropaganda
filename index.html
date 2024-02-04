@@ -1,24 +1,33 @@
 <html>
 
 <head>
+
     <meta property="og:site_name" content="Echos Awareness" />
     <meta property="og:site_name" content="3kh0.net" />
     <meta property="og:title" content="3kh0.net" />
-    <meta property="og:description" content="I am Echo, programmer, hacker, and furry. Welcome to my personal website! :D" />
+    <meta property="og:description"
+        content="I am Echo, programmer, hacker, and furry. Welcome to my personal website! :D" />
     <meta property="og:url" content="https://youtube.com/" />
     <meta property="og:image" id="ogImage" content="https://via.placeholder.com/512" />
+
 </head>
+
 <audio id="aud" controls style="display:none;">
     <source src="res/BGM.mp3" type="audio/mp3">
 </audio>
 
-<body>
+<body onload="playAudio()">
+
     <script>
-        document.addEventListener("DOMContentLoaded", (event) => {
+        function playAudio() {
             var audioElement = document.getElementById("aud");
             audioElement.play();
-        });
+        }
     </script>
+
+    <div></div>
+
 </body>
+
 
 </html>
