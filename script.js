@@ -1,103 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("wait");
-    const one = document.getElementById('one');
-    const k = document.getElementById('k');
-    const l = document.getElementById('l');
-    const f = document.getElementById('foot');
-    const f2 = document.getElementById('foot2');
-    const f3 = document.getElementById('foot3');
-    const o = document.getElementById("oo");
-    const pe = document.getElementById("pe");
-   //  const pp = document.getElementById("pp");
+// Boobies :3 (.) (.)
+// Rawr xD || UwU || OwO
 
-    btn.addEventListener("click", function(){
-        console.log("Launching Nuke");
-        btn.style.display = "none";
-        one.style.display = "block";
-        k.style.display = "block";
-        l.style.display = "block";
-        f.style.display = "block";
-        f2.style.display = "block";
-        f3.style.display = "block";
-        // pp.style.display = "block";
-        o.style.display = "inline-block";
-        pe.style.display = "block";
-        launch()
-    })
+// Variables
+const musiclist = ["x", "y", "z"];
+const player = document.getElementById("media");
+const prewebs = document.getElementById("preweb");
+const enter = document.getElementById("enterbtn");
+const webs = document.getElementById("web");
 
-    
+// Functions
+function loaded() {
+    // What Site Will Run
+    pickMusic();
+}
+
+function pickMusic() {
+    var RNG = Math.floor(Math.random() * musiclist.length); // RNG? Whats RNG? RANDOM NUMBER GENERATOR, YAYAAAYAYAYA ~(OwO)~
+    playMusic(RNG);
+}
+
+function playMusic(RNG) {
+    player.setAttribute("src", "music/" + musiclist[RNG]);
+}
+
+// On Clickies ~(^w^)~
+enter.addEventListener("click", function(){
+    prewebs.style.display = "none";
+    webs.style.display = "block";
 });
 
-
-function launch(){
-
-    /* var game = document.getElementById("game");
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    game.style.width = width + "px";
-    game.style.height = height + "px";
-    */
-
-    var audioElement = document.getElementById("aud");
-    var player = document.getElementById('s');
-    var apple = Math.floor(Math.random() * 20) + 1;
-
-    if (apple === 1) {
-        player.setAttribute("src", "res/audios/fixed-as.mp3");
-    } else if (apple === 2) {
-        player.setAttribute("src", "res/audios/fixed-bi.mp3");
-    } else if (apple === 3) {
-        player.setAttribute("src", "res/audios/fixed-diaf.mp3");
-    } else if (apple === 4) {
-        player.setAttribute("src", "res/audios/fnaf.mp3");
-    } else if (apple === 5) {
-        player.setAttribute("src", "res/audios/CG.mp3"); // Credit To My Darling Stiizzy
-    } else if (apple === 6) {
-        player.setAttribute("src", "res/audios/fixed-gl.mp3");
-    } else if (apple === 7) {
-        player.setAttribute("src", "res/audios/fixed-iheay.mp3");
-    } else if (apple === 8) {
-        player.setAttribute("src", "res/audios/fixed-ite.mp3");
-    } else if (apple === 9) {
-        player.setAttribute("src", "res/audios/fixed-sc.mp3");
-    } else if (apple === 10) {
-        player.setAttribute("src", "res/audios/fixed-stiutk.mp3");
-    } else if (apple === 11) {
-        player.setAttribute("src", "res/audios/hoaf.mp3");
-    } else if (apple === 12) {
-        player.setAttribute("src", "res/audios/biyj.mp3");
-    } else if (apple === 13) {
-        player.setAttribute("src", "res/audios/Ball.mp3");
-    } else if (apple === 14) {
-        player.setAttribute("src", "res/audios/bal.mp3");
-    } else if (apple === 15) {
-        player.setAttribute("src", "res/audios/beg.mp3");
-    } else if (apple === 16) {
-        player.setAttribute("src", "res/audios/ibsl.mp3");
-    } else if (apple === 17) {
-        player.setAttribute("src", "res/audios/fim.mp3");
-    } else if (apple === 18) {
-        player.setAttribute("src", "res/audios/ec.mp3");
-    } else if (apple === 19) {
-        player.setAttribute("src", "res/audios/aito.mp3");
-    } else if (apple === 20) {
-        player.setAttribute("src", "res/audios/gary.mp3");
-    }
-
-    audioElement.load();
-    try {
-        audioElement.play();
-    } catch (error) {
-        console.error("Error while playing audio:", error);
-    }
-
-    function addImageToDiv() {
-        var divY = document.querySelector('.y');
-        var imgElement = document.createElement('img');
-        imgElement.className = 'xd';
-        imgElement.src = 'res/xmr_hoodie.webp';
-        divY.appendChild(imgElement);
-    }
-
-    setInterval(addImageToDiv, 350);
-}
+// On Loaded
+document.addEventListener("DOMContentLoaded", loaded);
