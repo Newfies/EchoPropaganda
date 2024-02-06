@@ -55,10 +55,5 @@ enter.addEventListener("click", function(){
     player.play();
 });
 
-// Joke Script
-function StealUserCookies(xyz){
-    return
-};
-
 // On Loaded
 document.addEventListener("DOMContentLoaded", loaded);
