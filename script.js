@@ -24,7 +24,10 @@ const musiclist = [
     "iheay.mp3",
     "ite.mp3",
     "sc.mp3",
-    "stiutk.mp3"
+    "stiutk.mp3",
+    "lucid.mp3",
+    "liah.mp3",
+    "thrill.mp3"
   ];
   
 const player = document.getElementById("audio");
