@@ -5,29 +5,28 @@
 
 // Variables
 const musiclist = [
-    "aito.mp3",
-    "as.mp3",
-    "bal.mp3",
-    "Ball.mp3",
-    "beg.mp3",
-    "bi.mp3",
-    "biyj.mp3",
-    "CG.mp3",
-    "diaf.mp3",
-    "ec.mp3",
-    "fim.mp3",
-    "fnaf.mp3",
-    "gary.mp3",
-    "gl.mp3",
-    "hoaf.mp3",
-    "ibsl.mp3",
-    "iheay.mp3",
-    "ite.mp3",
-    "sc.mp3",
-    "stiutk.mp3",
-    "lucid.mp3",
-    "liah.mp3",
-    "thrill.mp3"
+    "aito.mp3", // Astronaut In The Ocean - Gura?
+    "as.mp3", // All Star - Mix
+    "bal.mp3", // Boys A Liar - Biden/Obama
+    "Ball.mp3", // Ballin' - Spongebob, Patrick, Squidward, Mr Krabs
+    "beg.mp3", // Begging - Plankton
+    "bi.mp3", // Big Iron - Hank Hill
+    "CG.mp3", // Credit To Stiizzy :3 || Fuck OperaGX
+    "diaf.mp3", // Die In A Fire - Squidward
+    "ec.mp3", // Eric Cartman Or Whatever, I Dont Watch South Park Lmao
+    "fim.mp3", // Friend In Me - Frank
+    "fnaf.mp3", // Tombstone FNaF Song - Frank
+    "gary.mp3", // Gary Come Home - Juice WRLD
+    "gl.mp3", // Get Lucky - Peter, Spongebob, Mordecai (?)
+    "hoaf.mp3", // Hooked On A Feeling - Squidward
+    "ibsl.mp3", // FNaF Song - Frank
+    "iheay.mp3", // I Hate Everything About You - Plankton
+    "ite.mp3", // In The End - Spongebob, Peter
+    "sc.mp3", // Sweet Caroline - Squidward
+    "stiutk.mp3", // Somebody That I Use To Know - Mordecai
+    "lucid.mp3", // Lucid Dreams - Squidward
+    "liah.mp3", // Life Is A Highway - Plankton
+    "thrill.mp3" // Thriller - Mr Krabs
   ];
   
 const player = document.getElementById("audio");
