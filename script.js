@@ -24,10 +24,10 @@ const musiclist = [
     "ite.mp3", // In The End - Spongebob, Peter
     "sc.mp3", // Sweet Caroline - Squidward
     "stiutk.mp3", // Somebody That I Use To Know - Mordecai
-    "lucid.mp3", // Lucid Dreams - Squidward
+    "lucid.mp3", // Lucid Dreams - Squidward [Shitty Quality]
     "liah.mp3", // Life Is A Highway - Plankton
     // "thrill.mp3" // Thriller - Mr Krabs [Shitty Quality]
-  ];
+  ]; // My Discord Is Open, Send Me Audios And I'll Add 'em!
   
 const player = document.getElementById("audio");
 const prewebs = document.getElementById("preweb");
