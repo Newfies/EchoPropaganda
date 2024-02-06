@@ -28,8 +28,8 @@ const musiclist = [
     "lucid.mp3", // Lucid Dreams - Squidward [Shitty Quality]
     "liah.mp3", // Life Is A Highway - Plankton
     // "thrill.mp3" // Thriller - Mr Krabs [Shitty Quality]
-  ]; // My Discord Is Open, Send Me Audios And I'll Add 'em!
-  
+];  // My Discord Is Open, Send Me Audios And I'll Add 'em!
+
 const player = document.getElementById("audio");
 const prewebs = document.getElementById("preweb");
 const enter = document.getElementById("enterbtn");
@@ -48,11 +48,11 @@ function pickMusic() {
 
 function playMusic(RNG) {
     player.setAttribute("src", "music/" + musiclist[RNG]);
-    
+
 }
 
 // On Clickies ~(^w^)~
-enter.addEventListener("click", function(){
+enter.addEventListener("click", function () {
     prewebs.style.display = "none";
     webs.style.display = "block";
     player.play();
