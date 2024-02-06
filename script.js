@@ -26,7 +26,7 @@ const musiclist = [
     "stiutk.mp3", // Somebody That I Use To Know - Mordecai
     "lucid.mp3", // Lucid Dreams - Squidward
     "liah.mp3", // Life Is A Highway - Plankton
-    "thrill.mp3" // Thriller - Mr Krabs
+    // "thrill.mp3" // Thriller - Mr Krabs [Shitty Quality]
   ];
   
 const player = document.getElementById("audio");
