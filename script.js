@@ -2,6 +2,7 @@
 // Rawr xD || UwU || OwO
 
 // And No, This Isn't AI Generated Either, I Am Actually More Awake Lol.
+// Final Push For The Day Is At [11/12]:30PM
 
 // Variables
 const musiclist = [
