@@ -76,3 +76,25 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+.proof, .wisewords {
+    margin-bottom: 450px;
+}
+
+.petting {
+    margin-bottom: 4500px;
+}
+
+.x {
+    color: rgba(255,255,255,0);
+    transition: ease-in 0.2s;
+}
+
+.x:hover {
+    color: rgba(255,255,255,0.5);
+    transition: ease-out 0.2s;
+}
+
+#a {
+    text-align: right;
+}
